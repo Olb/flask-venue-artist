@@ -1,9 +1,10 @@
-from app import app
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
+from flask import Flask
+from app import app
+from datetime import datetime
 
 db = SQLAlchemy(app)
-
 
 class Venue(db.Model):
     __tablename__ = 'Venue'
